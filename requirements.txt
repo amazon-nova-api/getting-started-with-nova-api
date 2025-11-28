@@ -1,1 +1,3 @@
 openai
+ipykernel
+strands-agents-tools
