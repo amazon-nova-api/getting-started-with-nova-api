@@ -1,107 +1,57 @@
-# Nova API Examples
+# Amazon Nova API Cookbook
 
-This repository contains Python scripts and Jupyter notebooks demonstrating how to interact with Amazon Nova AI models using their API.
+## Introduction
+Amazon Nova foundation models deliver frontier intelligence and industry-leading price-performance, enabling you to build generative AI applications that are safe, reliable and cost-effective.
+
+This repository contains code samples demonstrating how to use the Amazon Nova API, an OpenAI-compatible interface for Amazon Nova's latest models.
+
+> ⚠️ Please note: The Amazon Nova API is not currently intended for production usage. See our [API Documentation](https://nova.amazon.com/dev/documentation) for rate limits and quotas. For higher rate limits and quotas, explore Amazon Nova models on [AWS](https://aws.amazon.com/nova/). 
+
+## Get Started
+
+To get started, ensure you have an Amazon Nova API Key. You can get one at [nova.amazon.com/dev](nova.amazon.com/dev/api).
+
+If you are building on AWS, please see [AWS Samples for Amazon Nova](https://github.com/aws-samples/amazon-nova-samples/).
+
 
 ## Prerequisites
 
 - Python 3.x
 - Jupyter Notebook (for running .ipynb files)
-- Nova API Key from Amazon
+- Nova API Key from [nova.amazon.com/dev](https://nova.amazon.com/dev/api)
 
 ## Setup
 
-1. Install required dependencies:
+1. Create a virtual environment (recommended):
+```bash
+python -m venv my_nova
+source my_nova/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Configure your API key:
-   - Open `nova_key.py`
-   - Replace `<YOUR_NOVA_API_KEY_GOES_HERE` with your actual Nova API key
+3. Configure your API key:
+```bash
+cp .evn.example .env
+```
+4. Edit `.env` and replace `your_api_key_here` with your actual Amazon Nova API Key
 
-## Files Overview
+> ⚠️  Important: Never commit your `.env` file to version control
 
-### Configuration Files
-
-**nova_key.py**
-- Stores your Nova API key
-- Required by all other scripts and notebooks
-- Must be configured before running any examples
-
-**requirements.txt**
-- Lists Python dependencies (currently: `openai`)
-- Install with: `pip install -r requirements.txt`
-
-### Python Scripts
-
-**list_models.py**
-- Lists all Nova models available for your API key
-- Displays model display names and IDs
-- Execute with:
+4. Run the following to verify setup and list all the Amazon Nova models and agents available to you
 ```bash
 python list_models.py
 ```
 
-### Jupyter Notebooks
+## Examples
 
-**single_turn.ipynb**
-- Demonstrates single-turn interactions with Nova models
-- Examples include:
-  - Simple greeting interaction
-  - Question answering about GenAI topics
-- Uses the OpenAI SDK with Nova API endpoint
-- Execute: Open in Jupyter and run cells sequentially
+1. **getting_started.ipynb**: Basic setup and interaction with Amazon Nova
+1. **multi_turn.ipynb**: Shows multi-turn conversation capabilities
+1. **nova_tools.ipynb**: Comprehensive guide to Nova's tool calling capabilities
+1. **nova_strands_sdk.ipynb**: Building Nova powered agents with Strands SDK
 
-**multi_turn.ipynb**
-- Shows multi-turn conversation capabilities
-- Example: Recipe generation with follow-up modifications
-- Demonstrates conversation history management
-- Execute: Open in Jupyter and run cells sequentially
-
-**nova_tools.ipynb**
-- Comprehensive guide to Nova's tool calling capabilities
-- Covers:
-  - Auto tool selection (calculator, search, code generation)
-  - Custom tool definition and usage
-  - Tool chaining (combining auto and custom tools)
-- Examples include:
-  - Mathematical calculations
-  - Web search queries
-  - Code generation
-  - Unit conversion with custom tools
-- Execute: Open in Jupyter and run cells sequentially
-
-**nova_api_strands_sdk.ipynb**
-- Demonstrates using Strands Agent's HTTP tool to call Nova APIs
-- Alternative approach to making API calls
-- Requires additional dependency: `strands-agents-tools`
-- Execute: Open in Jupyter and run cells sequentially
-
-## Running the Examples
-
-### For Python Scripts:
-```bash
-python list_models.py
-```
-
-### For Jupyter Notebooks:
-```bash
-jupyter notebook
-```
-Then open the desired notebook and run cells in order.
-
-## Common Workflow
-
-1. Set up your API key in `nova_key.py`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Check available models: `python list_models.py`
-4. Explore notebooks starting with `single_turn.ipynb`
-5. Progress to more advanced examples like `nova_tools.ipynb`
-
-## Model Configuration
-
-The notebooks use `nova-lite-v2` by default. You can change the model by modifying the `NOVA_MODEL_ID` variable in each notebook.
-
-## API Endpoint
-
-All examples connect to: `https://api.nova.amazon.com/v1`
+## License
+This library is licensed under the MIT-0 License. See the [LICENSE](/LICENSE) file.
