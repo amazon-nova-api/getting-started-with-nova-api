@@ -41,14 +41,18 @@ cp .evn.example .env
 
 > ⚠️  Important: Never commit your `.env` file to version control
 
-## Examples
+## Suggested Workflow
+### Getting Started with Amazon Nova
+1. **[Getting Started](/00_getting_started.ipynb)**: Complete basic set up, make your first calls, and learn Amazon Novas new features
+1. **[Multi Turn](/01_multi_turn_interactions.ipynb)**: Go from single calls, to chaining promp turns to complete a conversation with Amazon Nova
+1. **[Multi Modal Understanding](/02_multimodal_understanding.ipynb)**: Get started with Amazon Nova's multi modal understanding capabilities, like image, and video understanding
+1. **[Tool Use with Nova](/03_tool_use_with_nova.ipynb)**: Learn the basics of tool use with Amazon Nova
+1. **[Nova Strands Agent](/04_nova_api_strands_sdk.ipynb)**: Get your first taste of building a simple agent with Strands SDK
+### Build Agents with Amazon Nova
+1. **[langchain/](/langchain/)**: Advanced examples of building Nova Agents with LangChain
+1. **[strands/](/strands/)**: Advanced examples of building Nova Agents with LangChain
+1. **[nova_agents/](/nova_agents/)**: Agentic application examples combining Nova Acts computer use capabilities
 
-1. **getting_started.ipynb**: Basic setup and interaction with Amazon Nova
-1. **multi_turn.ipynb**: Shows multi-turn conversation capabilities
-1. **nova_tools.ipynb**: Comprehensive guide to Nova's tool calling capabilities
-1. **nova_strands_sdk.ipynb**: Building Nova powered agents with Strands SDK
-1. **[langchain/](examples/langchain/)**: Examples using LangChain with Amazon Nova models
-1. **[nova_agents/](examples/nova_agents/)**: Agentic application examples combining Nova's capabilities such as multimodal, knowledge grounding, and computer use.
 
 ## License
 This library is licensed under the MIT-0 License. See the [LICENSE](/LICENSE) file.

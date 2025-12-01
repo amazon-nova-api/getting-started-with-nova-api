@@ -5,3 +5,6 @@ __pycache__
 .venv/
 *.egg-info/
 .python-version
+.local/
+.vscode/
+.idea/
