@@ -5,7 +5,7 @@ This folder demonstrates how to use the Nova API to use Amazon Nova models to bu
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Strands Agents and Nova](#strands-and-nova)
+- [Strands Agents and Nova](#strands-agents-and-nova)
 - [Image Analysis and Computer Use](#image-analysis-and-computer-use)
 - [Knowledge Grounding and Computer Use](#knowledge-grounding-and-computer-use)
 
