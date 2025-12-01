@@ -1,6 +1,6 @@
 # Nova Agent Examples
 
-This folder demonstrates how to use the Nova API to use Amazon Nova models to build agentic applications. These are simple examples meant to spark ideas and serve as a starting point for development.
+This folder demonstrates how to use the Nova API to build agentic applications using Amazon Nova models. These are simple examples meant to spark ideas and serve as a starting point for development.
 
 ## Table of Contents
 
