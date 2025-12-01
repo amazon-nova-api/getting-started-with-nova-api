@@ -9,7 +9,7 @@ This repository contains code samples demonstrating how to use the Amazon Nova A
 
 ## Get Started
 
-To get started, ensure you have an Amazon Nova API Key. You can get one at [nova.amazon.com/dev](nova.amazon.com/dev/api).
+To get started, ensure you have an Amazon Nova API Key. You can get one at [nova.amazon.com/dev](https://nova.amazon.com/dev/api).
 
 If you are building on AWS, please see [AWS Samples for Amazon Nova](https://github.com/aws-samples/amazon-nova-samples/).
 
