@@ -1,3 +1,23 @@
-openai
-ipykernel
+# Core dependencies for all notebooks in this repository
+# For specific examples, see:
+#   - nova_agents/requirements.txt (for agent examples with Nova Act)
+#   - langchain/requirements.txt (for LangChain examples)
+
+# Core Nova API dependencies
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Jupyter notebook support
+ipykernel>=6.0.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Strands SDK for agent examples (notebooks 04)
+strands-agents>=1.2.0
 strands-agents-tools
+
+# Optional: Install nova_agents dependencies with:
+#   pip install -r nova_agents/requirements.txt
+#
+# Optional: Install langchain dependencies with:
+#   pip install -r langchain/requirements.txt

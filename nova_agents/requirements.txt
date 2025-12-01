@@ -1,6 +1,16 @@
-openai>=1.0.0
-python-dotenv>=1.0.0
+# Additional dependencies for Nova Agent examples
+# These are in addition to the root requirements.txt
+# 
+# To install everything needed for agent examples:
+#   pip install -r ../requirements.txt  # Install base dependencies first
+#   pip install -r requirements.txt     # Then install these additions
+
+# Nova Act for computer use examples
 nova-act
-strands-agents>=1.2.0
-strands-agents-tools
-strands-nova
+
+# Note: The following are already in root requirements.txt:
+# - openai>=1.0.0
+# - python-dotenv>=1.0.0
+# - strands-agents>=1.2.0
+# - strands-agents-tools
+# - strands-nova

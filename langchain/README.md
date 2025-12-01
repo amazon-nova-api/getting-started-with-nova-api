@@ -1,34 +1,25 @@
-# LangChain with ChatAmazonNova - Jupyter Notebooks
+# LangChain Nova Examples
 
-Interactive Jupyter notebook examples for using LangChain with Amazon Nova models.
+This directory contains examples demonstrating how to use Amazon Nova with the LangChain framework.
 
-## Setup
+## Installation
 
-Create a virtual environment and install dependencies:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -e .
-```
-
-## Launch Jupyter
+Install the required dependencies:
 
 ```bash
-jupyter notebook
+pip install -r requirements.txt
 ```
 
-## Environment Variables
+## Contents
 
-Set these before running the notebooks:
+- `chains_patterns.ipynb` - Chain patterns and compositions
+- `memory_patterns.ipynb` - Memory management patterns
+- `output_parsers.ipynb` - Output parsing techniques
+- `prompt_templates.ipynb` - Prompt template examples
+- `rag_patterns.ipynb` - Retrieval Augmented Generation patterns
 
-```bash
-export NOVA_API_KEY="your-api-key"
-export NOVA_BASE_URL="https://api.nova.amazon.com/v1"
-```
+## Dependencies
 
-## Available Notebooks
+This directory uses the [langchain-amazon-nova](https://github.com/amazon-nova-api/langchain-amazon-nova) integration package along with LangChain core components.
 
-Coming soon! Python examples are available in `../python/`
-
-For now, you can convert Python examples to notebooks or create your own interactive explorations.
+For the complete list of dependencies, see `requirements.txt`.
