@@ -2,7 +2,7 @@
 # Install with: pip install -r requirements.txt
 
 # LangChain Amazon Nova integration
-git+https://github.com/amazon-nova-api/langchain-amazon-nova.git#subdirectory=libs/amazon_nova
+langchain-amazon-nova
 
 # LangChain core components
 langchain-core>=0.3.0
