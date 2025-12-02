@@ -1,0 +1,17 @@
+# LangChain examples dependencies
+# Install with: pip install -r requirements.txt
+
+# LangChain Amazon Nova integration
+git+https://github.com/amazon-nova-api/langchain-amazon-nova.git#subdirectory=libs/amazon_nova
+
+# LangChain core components
+langchain-core>=0.3.0
+langchain-text-splitters>=0.3.0
+
+# Jupyter notebook support (already in root requirements.txt, but included for standalone use)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+notebook>=7.0.0
+
+# Development dependencies (optional)
+# ruff>=0.6.0  # Uncomment for linting support

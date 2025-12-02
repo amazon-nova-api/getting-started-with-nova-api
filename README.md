@@ -22,11 +22,11 @@ If you are building on AWS, please see [AWS Samples for Amazon Nova](https://git
 
 ## Setup
 
-1. Clone this repo
+1. Clone the repository:
 ```bash
-git clone https://github.com/amazon-nova-api/getting-started-with-nova-api
+git clone https://github.com/amazon-nova-api/getting-started-with-nova-api.git
+cd getting-started-with-nova-api
 ```
-
 
 2. Create a virtual environment (recommended):
 ```bash
@@ -35,13 +35,25 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
 3. Install required dependencies:
+
+**For basic notebooks (00-04):**
 ```bash
 pip install -r requirements.txt
 ```
 
+**For Nova Agent examples (optional):**
+```bash
+pip install -r nova_agents/requirements.txt  # Adds Nova Act for computer use
+```
+
+**For LangChain examples (optional):**
+```bash
+pip install -r langchain/requirements.txt
+```
+
 4. Configure your API key:
 ```bash
-cp .evn.example .env
+cp .env.example .env
 ```
 5. Edit `.env` and replace `your_api_key_here` with your actual Amazon Nova API Key
 
