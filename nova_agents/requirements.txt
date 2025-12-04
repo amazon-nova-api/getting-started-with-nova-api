@@ -8,9 +8,11 @@
 # Nova Act for computer use examples
 nova-act
 
+# Amazon Nova Strands Model Provider
+strands-amazon-nova>=1.0.2,<2.0.0
+
 # Note: The following are already in root requirements.txt:
 # - openai>=1.0.0
 # - python-dotenv>=1.0.0
 # - strands-agents>=1.2.0
 # - strands-agents-tools
-# - strands-nova

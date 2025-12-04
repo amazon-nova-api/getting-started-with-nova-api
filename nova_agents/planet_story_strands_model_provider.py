@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 from nova_act import NovaAct
 from strands import Agent, tool
-from strands_nova import NovaModel
+from strands_amazon_nova import NovaAPIModel
 
 # Load environment variables
 load_dotenv()
@@ -25,7 +25,7 @@ if not NOVA_API_KEY:
 SEPARATOR = "=" * 80
 
 # Initialize Nova Model Provider for Strands
-nova_model = NovaModel(
+nova_model = NovaAPIModel(
     api_key=NOVA_API_KEY, 
     model_id="nova-lite-v2",
     stream=False
